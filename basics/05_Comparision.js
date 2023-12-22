@@ -8,5 +8,3 @@
 console.log('1'>2)
 //===strict equal
 console.log('2'===2)
-
-

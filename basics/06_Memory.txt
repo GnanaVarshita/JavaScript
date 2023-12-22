@@ -1,0 +1,4 @@
+Types of Memory: 2
+1. Stack (Primitive)-> whenever a datatype is created we get a 
+copy of that datatype
+2.Heap(Non -Primitive)-> Direct reference
