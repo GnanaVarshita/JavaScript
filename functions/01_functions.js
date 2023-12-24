@@ -28,3 +28,58 @@ function loginUserMessage1(username){
 }
 console.log(loginUserMessage1())
 
+//rest operator( ...)
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200,200,400,500,800))
+
+function sum(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+      total += arg;
+    }
+    return total;
+  }
+  
+  console.log(sum(1, 2, 3));
+  // Expected output: 6
+  
+  console.log(sum(1, 2, 3, 4));
+  // Expected output: 10
+
+//pass an object into function
+const user={
+    username:'Gnana',
+    password:'Varshita'
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and password is ${anyobject.password}`)
+}
+
+//we can pass an object which is predefined and also an object 
+//where we can define while passing as arguments
+
+handleObject(user)
+handleObject({
+    username:'ncjsdnc',
+    passwor:'bcjsdb'
+
+})
+handleObject({
+    username:'ncjsdnc',
+    password:'bcjsdb'
+
+})
+
+const myNewArray=[200,900,400,600]
+
+function returnsecond(getArr){
+    return getArray[1]
+}
+
+console.log(myNewArray)
+
