@@ -51,3 +51,36 @@ console.log(users[1].name)
 //Used in Data base ->output is in form of arrays
 console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
+
+const course = {
+    coursename:'JavaScript',
+    price:0,
+    courseInstuctor:'Hitesh'
+
+}
+
+//writing clean code ->Destructing object
+
+const {curseInstructor: instructor}= course
+
+console.log(instructor)
+//Destructuring is used in ReactJs more
+
+//JSon
+//API's give data from backend in the form of JSON
+//Smetimes in array format as well
+
+// {
+//     "name":"Gnana",
+//     "coursename":"JavaSript"
+
+// }
+
+//API's data in form of Array
+// [
+//     {},
+//     {},
+//     {},
+// ]
+
+//Go to random api's me website and explore an api result
