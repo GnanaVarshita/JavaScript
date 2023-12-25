@@ -32,3 +32,13 @@ if(balance>500){
         }
     }
 }
+
+const userloggedIn = true
+const debitCard = true
+//&& AND
+if(userloggedIn&& debitCard){
+    console.log('Welcome')
+}
+
+//  OR operator -> ||
+
