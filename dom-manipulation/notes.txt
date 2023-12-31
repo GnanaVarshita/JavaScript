@@ -1,0 +1,10 @@
+const title = document.getElementById('idname').innerHTML='jsajhj'
+title.style.backgroundColor = 'green'
+           .padding ='15px'
+           .borderRadius='15px'
+
+//How content is added ??
+ title.textContent, title.innerHTML, title.innerText
+ gives the values in that id
+
+ But the difference is 
