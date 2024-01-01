@@ -7,4 +7,11 @@ title.style.backgroundColor = 'green'
  title.textContent, title.innerHTML, title.innerText
  gives the values in that id
 
- But the difference is 
+difference inner content and innertext, innerHTML
+
+
+.querySelector(.heading,id,className, attribute)
+
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+document.querySelectorAll('li')
