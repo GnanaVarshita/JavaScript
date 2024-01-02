@@ -14,4 +14,18 @@ difference inner content and innertext, innerHTML
 
 const myul = document.querySelector('ul')
 myul.querySelector('li')
-document.querySelectorAll('li')
+document.querySelectorAll('li') -> gets all li's in document
+if 'h1' is selected all h1's in document is returned as a node list
+
+for nodelist use for each loop
+
+//
+document.getElementByClassName('class') -> returns HTMLCollection
+How to loop HTMLCollection??
+const tempClassList = document.getElementByClassName('class')
+//Convert this HTMLCollection to Array and use loops on it
+const convertedArray = Array.from(tempClassList)
+convertedArray.forEach(function(li)){
+    li.style.color='orange'
+}
+
