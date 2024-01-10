@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <div >
+        <ul id="images">
+            <li style ="cursor:pointer"><img 
+                width ="200px" 
+                id ="river" 
+                src="https://files.adventure-life.com/10/62/17/Europe_13/1300x820.webp" 
+                alt ="river from amsterdam " />
+                </li>
+
+                <li style ="cursor:pointer"><img 
+                    width ="200px" 
+                    id ="river" 
+                    src="https://files.adventure-life.com/10/62/17/Europe_13/1300x820.webp" 
+                    alt ="river from amsterdam " />
+                    </li>
+
+                    <li style ="cursor:pointer"><img 
+                        width ="200px" 
+                        id ="river" 
+                        src="https://files.adventure-life.com/10/62/17/Europe_13/1300x820.webp" 
+                        alt ="river from amsterdam " />
+                        </li>
+
+                        <li style ="cursor:pointer"><img 
+                            width ="200px" 
+                            id ="river" 
+                            src="https://files.adventure-life.com/10/62/17/Europe_13/1300x820.webp" 
+                            alt ="river from amsterdam " />
+                            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    //events are invoked after some action
+    // document.getElementById('river').onclick= function(){
+    //     alert('hwllo')
+    // }
+
+    //best approach now
+
+    // document.getElementsByClassName('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul ")
+    // },false) 
+
+    document.getElementById('river').addEventListener('click',function(e){
+        console.log("clicked inside the li ")
+        e.stopPropagation()
+
+       // e.preventDefault()
+       //prvents the function 
+    }) 
+
+    //type, timestamp, defaultPrevented
+    //target, toElement,srcElemnt,currentTarget
+    //clientX,clientY, screenX,screenY
+    //altkey, ctrlkey,shiftkey, bytecode
+
+    //the clicked images has to be gone from the html document
+    document.querySelector("#images").addEventListener('click',function(e){
+     // console.log(e)
+      console.log(e.target.parentNode)
+      let removeIt = e.target.parentNode
+      //removeIt.remove()
+      removeIt.parentNode.removeChild(removeIt)
+    },false)
+
+</script>
+</html>
