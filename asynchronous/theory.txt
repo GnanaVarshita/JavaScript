@@ -1,0 +1,15 @@
+JS is a synchronous and single threaded 
+code executes after one code is executed 
+execute one line of code at a time
+
+But every time JS is not available alone,
+It is always available with runtime evironment
+
+Blocking Code-> Blocks the flow of code -> Read File sync  (Access to file system is available in NodeJS)
+Non-Blocking COde -> Does not block execution -> Read File Async
+
+//How non-blocking code is better than blocking code
+It depends on the usecases , like database management
+
+
+//refer one
